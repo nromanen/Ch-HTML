@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="contact-form">
+        <form id="contact" method="post" action="">
+           <fieldset>
+            <label for="name">Name</label>
+            <input type="text" name="name" required  title="Only capital letter" pattern="^[A-ZА-ЯЁ]{1}[a-zа-яё]+$">
+           
+          
+               
+            </fieldset>
+                <fieldset>
+                <label for="name">Email</label>
+                <input type="text" name="email" required/>
+                </fieldset>
+                    <fieldset>
+                    <label for="Age">Age</label>
+                    <input type="number" name="Age"  required min=1 max=100>
+                    <button type="submit">Submit</button>
+                    </fieldset>
+        </form>
+    </div>
+</body>
+</html>
