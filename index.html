@@ -10,18 +10,15 @@
         <form id="contact" method="post" action="">
            <fieldset>
             <label for="name">Name</label>
-            <input type="text" name="name" required  title="Only capital letter" pattern="^[A-ZА-ЯЁ]{1}[a-zа-яё]+$">
-           
-          
-               
+            <input type="text" name="name" required autofocus valid title="Only capital letter" pattern="^[A-ZА-ЯЁ]{1}[a-zа-яё]+$">
             </fieldset>
                 <fieldset>
                 <label for="name">Email</label>
-                <input type="text" name="email" required/>
+                <input type="text" name="email" required valid/>
                 </fieldset>
                     <fieldset>
                     <label for="Age">Age</label>
-                    <input type="number" name="Age"  required min=1 max=100>
+                    <input type="number" name="Age"  required valid min=1 max=100>
                     <button type="submit">Submit</button>
                     </fieldset>
         </form>
