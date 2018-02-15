@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>My first HTML form</title>
+	</head>
+	<body>
+		<h1>Please fill the form below</h1><hr>
+		<form>
+			<label for="name">Name</label><br>
+			<input type="text" name="name"  pattern="[A-Z]{1}[a-z]+" placeholder="Enter your name"/><br>
+			<br>
+			<label for="age">Age</label> <br>
+			<input type="number" name="age"  max="100" min="1" placeholder="Enter your age"/><br>
+			<br>
+			<label for="email">E-mail</label><br>
+			<input type="text" name="email" placeholder="Enter your email"/><br>
+			<br>
+			<input type="submit" name "submit" value="SEND"/>
+		</form>
+	</body>
+</html>
