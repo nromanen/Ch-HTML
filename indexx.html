@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/main.css">
+   
+    
+    
+    <title>Document</title>
+</head>
+<body>
+   <h1 class="tittle">Registration form</h1>
+    <div id="contact-form">
+       
+        <form id="games" name="games" method="post" action=""  onsubmit="return function(m)" >
+            <p>Write your min range number between 1 and 300</p>
+            <input type="number"  name="mins" required autofocus valid title="" min="1"; max="100";   value="" > <br> 
+                <p>Write your max range number between 1 and 300</p>
+               
+            <input  type="number" name="maxs"  min="1"; max="100"; placeholder= "Write it reverse" ><br> 
+            
+              
+               
+            <p>
+            <select size="3" multiple name="operatores">
+            <option disabled>Choose Operator</option>
+            <option value="1" name="plusic">+</option>
+            <option selected value="2" name="minusik">-</option>
+            <option value="3">*</option>
+            </select></p>
+        
+            <button type="button" id="btn" onclick=" kkk()" name="gen" class = "button">Generate</button>     
+              <p>Your exercise</p>
+              <br>
+            <p id="sum">Значення</p>
+            <input  type="text" name="exercise" hidden placeholder= "Write it reverse" ><br>
+            
+            <p>Your answer</p>
+              
+            <input  type="text" name="answer" placeholder= "Write it reverse" ><br>
+            <button type="submit" onclick="Ggg()" name="checkk" class = "button">Check</button>
+        </form>
+    </div>
+ 
+    <script src="script.js"></script>
+</body>
+</html>
