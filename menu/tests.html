@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Test</title>
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="../img/icon.ico" type="image/x-icon" />
+
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top">
+      <a href="../index.html" class="navbar-brand"><img src="../img/placelogo.png"></a>
+      <button type="button" class="navbar-toggler" data-toggle="collapse" name="button" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item"> <a href="../index.html" class="nav-link">Главная</a></li>
+          <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Игры</a>
+          <div class="dropdown-menu">
+          <a class="dropdown-item" href="../menu/games.html">Новые</a>
+          <a class="dropdown-item" href="../menu/games.html">Популярные</a>
+          <a class="dropdown-item" href="../menu/games.html">Все игры</a>
+          </div>
+          </li>
+          <li class="nav-item"> <a href="../menu/news.html" class="nav-link">Новости</a></li>
+          <li class="nav-item"> <a href="../menu/articles.html" class="nav-link">Статьи</a></li>
+          <li class="nav-item"> <a href="../menu/gallery.html" class="nav-link">Галерея</a></li>
+        </ul>
+
+        <form>
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="Введите название игры">
+            <div class="input-group-btn">
+              <button class="btn btn-light" type="submit">
+                <i class="fa fa-search"></i>
+              </button>
+            </div>
+          </div>
+        </form>
+      <a href class="nav-item" data-toggle="modal" data-target="#myModal" style="margin:0 20px;"><i class="fa fa-user-circle"></i>&nbsp; Вход </a>
+      </div>
+    </nav>
+
+
+    <div class="container">
+<div class="title_module"><span>Test 1</span></div>
+<br>
+    <input class="form-control" type="text" id="firstnumb" name="text" readonly value="" onclick="randomnum()">
+    <br>
+      <input class="form-control" type="text" id="secondnumb" name="text" value="">
+      <br>
+        <input class="btn btn-info" type="submit" id="submit" name="submit" value="Проверить" onclick="checknumber()">
+
+<br><br>
+      <div id="result"></div>
+
+<br>
+<div class="title_module"><span>Test 2</span></div>
+<br>
+<h5><span class="text_test2">Сгенерируйте числа от минимального до максимального, и выберите знак операции:</span></h5>
+<input type="text" id="first" placeholder="мин число" onkeyup="checkParams()" autocomplete="off" value="">
+<input type="text" id="second" placeholder="макс число" onkeyup="checkParams()" autocomplete="off" value="">
+<select class="" id="randfunction">
+  <option value="+"> + </option>
+  <option value="-"> - </option>
+  <option value="*"> * </option>
+  <!-- <option value="/"> / </option>  -->
+</select>
+<input type="submit" id="btn_sozdat" value="Создать" onclick="funcrandom()" disabled>
+<input type="text" name="text" value="" id="finOperation"  style="display:none;">
+<br>
+<div id="text"><br>Сколько будет?</div>
+<div id="resultat" ></div><div id="znak" ></div><div id="resultat2" ></div><div id="finish"></div>
+
+<br><br>
+<input placeholder="Введите результат" type="text" onkeyup="checkresult()" value="" id="yourchoice">
+<input type="submit" id="btn_proverka" value="Проверить" onclick="proverka()" disabled>
+
+<div id="knopka_result"><div class="slider"><br>Правильно ответили <span id="target"></span> раз(а). || Не правильно <span id="target2" ></span> раз(а).
+<button type="submit" id="btn_hide">Скрыть</button>
+</div>
+<br>
+<button type="submit" id="btn_show">Показать результат</button> <input type="submit" value="Очистить историю ответов" onclick="del_storage()"></div>
+
+<br><br>
+</div>
+    </div>
+
+
+    <div class="footer">
+      <ul class="nav">
+    <li class="nav-item">
+      <a class="nav-link" href="#">О нас</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Контакты</a>
+    </li>
+    </ul>
+    </div>
+
+
+    <div id="myModal" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Форма входа</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body">
+            <div class="form-group">
+      <input type="text" class="form-control" id="usr" placeholder="Электронная почта">
+    </div>
+    <div class="form-group">
+      <input type="password" class="form-control" id="pwd" placeholder="Пароль">
+    </div>
+    <div id="modal_button_vhod"><a href="#" class="rememb_psw">Забыли пароль?</a> <button type="button" class="btn btn-success btn-vhod">Вход</button>
+
+    <hr>
+    <span><p>У вас еще нет аккаунта?</p></span>
+    <a href="../menu/register.html" title="Регистрация"><button type="button" class="btn btn-secondary btn-registr">Регистрация</button></a>
+    </div>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+    <script src="../js/jq-3.2.1.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+      <script src="../js/showhideresult.js"></script>
+       <script src="../js/proverkafunc.js"></script>
+   <script src="../js/randomfunc.js"></script>
+    <script src="../js/reverseNumber.js"></script>
+   <script src="../js/randomNumb.js"></script>
+
+  </body>
+</html>
