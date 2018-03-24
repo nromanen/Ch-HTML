@@ -22,5 +22,5 @@ To launch a website:
 
 3.Run serverCV.js
 
-PS.The file with ajax it is located here - "public/js/myJs/login.js"
+PS.The file with ajax is located here - "public/js/myJs/login.js"
 
