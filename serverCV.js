@@ -71,7 +71,7 @@ app.post('/pasword', function(req, res) {
         res.send(result_messages);
       });
     } else {
-      res.send("lashara")
+      res.send("wrong")
     }
   });
 });
