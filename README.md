@@ -1,2 +1,2 @@
-Test server for site PlaceGame
+Test server for site PlaceGame (Node.js, Express)
 
