@@ -1,0 +1,32 @@
+{
+  "name": "atelier",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AndrewFedoryk/Atelier.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AndrewFedoryk/Atelier/issues"
+  },
+  "homepage": "https://github.com/AndrewFedoryk/Atelier#readme",
+  "dependencies": {
+    "bcrypt": "^1.0.3",
+    "body-parser": "^1.18.2",
+    "connect-mongo": "^2.0.1",
+    "express-generator": "^4.15.5",
+    "express-session": "^1.15.6",
+    "mongodb": "^3.0.4",
+    "mongoose": "^5.0.10",
+    "passport": "^0.4.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.17.2"
+  }
+}

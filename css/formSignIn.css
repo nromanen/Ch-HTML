@@ -1,0 +1,24 @@
+.form-group {
+    background: linear-gradient(to bottom,#fc9403,#583d81)fixed center center;
+    text-align: center;
+    padding: 0 auto;
+    padding-bottom: 25px;
+    margin: 0 auto;
+    margin-top: 50px;
+    align-items: center;
+    display: block;
+    justify-content: center;
+}
+
+.btn {
+    padding: 0 auto;
+    margin-top: 20px;
+}
+
+.form_conteiner {
+    background-size: cover;
+    background-color: #1b1e21;
+}
+
+.conteiner-fluid {
+}
