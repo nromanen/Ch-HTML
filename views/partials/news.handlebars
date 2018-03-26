@@ -1,0 +1,11 @@
+{{#each partials.newsContext.locations}}
+<div class="col-lg-3 col-md-6 col-sm-6">
+      <div class="card">
+        <img class="card-img-top" src="{{imgUrl}}" alt="">
+        <div class="card-body">
+          <h4 class="card-title"><a href="/"><div class="shorttext100">{{title_news}}</div></a></h4>
+          <div class="card-text"><p><div class="shorttext100">{{caption}}</div></p></div>
+        </div>
+      </div>
+</div>
+{{/each}}

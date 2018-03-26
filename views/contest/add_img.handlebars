@@ -1,0 +1,14 @@
+<div class="modal-header"><h3>Страница добавления изображений</h3></div>
+<form class="form-horizontal" role="form" enctype="multipart/form-data" method="POST" action="/contest/add_img/{year}/{month}">
+   <div class="form-group"><br>
+     <label class="col-sm-12">Веберите изображение для загрузки </label>
+     <div class="col-sm-12" >
+       <input type="file" class="form-control" required accept="image/*" id="fieldPhoto" name="photo">
+     </div>
+   </div>
+     <div class="form-group" >
+       <div class="col-sm-offset-2 col-sm-12">
+       <button type="submit" class="btn btn-succes">Отправить</button>
+     </div>
+   </div>
+ </form>

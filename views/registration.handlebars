@@ -1,0 +1,21 @@
+<div class="modal-header"><h3>Страница регистрации</h3></div>
+       <form id="form_regist">
+ <div class="form-group">
+ <label for="email" id="label_registr"><span>Электронная почта: </span></label>
+ <input type="email" class="form-control" placeholder="Введите ваш e-mail" id="email" required autofocus class="input_reg">
+ </div>
+  <div class="form-group">
+ <label for="name" id="label_registr"><span>Имя: </span></label>
+ <input type="name" class="form-control"  placeholder="Имя должно содержать 1 заглавную и не менее 4 латинских букв" required pattern="[A-Z]{1}[A-Za-z]{3,15}" id="name" class="input_reg">
+ </div>
+ <div class="form-group">
+ <label for="password" id="label_registr"><span>Пароль: </span></label>
+ <input type="password" class="form-control" placeholder="Введите ваш пароль" required id="password1">
+ </div>
+ <div class="form-group">
+ <label for="password" id="label_registr"><span>Пароль (подтверждение): </span></label>
+ <input type="password" class="form-control" placeholder="Повторите пароль" required id="password2">
+ </div>
+ <div class="form-group"><input type="submit" class="btn btn-success button_reg" value="Регистрация"></div>
+ </form>
+ <div id="errorBlock"></div>

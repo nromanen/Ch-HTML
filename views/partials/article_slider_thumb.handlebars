@@ -1,0 +1,14 @@
+{{#each partials.article_slider_thumbContext.locations}}
+<div class="col-sm-4">
+  <div class="thumb-wrapper">
+    <div class="img-box">
+      <img src="{{imgUrl}}" class="img-responsive img-fluid" alt="">
+    </div>
+    <div class="thumb-content">
+      <h4><a href="/" title="{{title_article}}"><div class="shorttext50">{{title_article}}</div></a></h4>
+      <p><div class="shorttext100">{{caption}}</div></p>
+      <a href="#" class="btn btn-info">Читать <i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+</div>
+{{/each}}

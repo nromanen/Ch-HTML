@@ -1,0 +1,55 @@
+    <div class="row">
+  {{>popular_news_first}}  {{>popular_news}}
+  </div>
+<div class="clear"></div>
+
+<div class="title_module"><span>Новости</span></div>
+  <div class="row text-center">
+    {{>news}}
+  </div>
+<div class="btn-vse-index">
+  <a href="/news" title=""><button type="button" name="button" class="btn btn-outline-secondary"> Все новости </button></a></div>
+<div class="clear"></div>
+
+<div class="title_module"><span>Статьи</span></div>
+<div class="row">
+		<div class="col-md-12 col-center m-auto">
+			<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="0">
+      <!--  <ol class="carousel-indicators">
+				<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+				<li data-target="#myCarousel" data-slide-to="1"></li>
+			</ol>-->
+			<!-- Wrapper for carousel items -->
+			<div class="carousel-inner">
+				<div class="item carousel-item active">
+					<div class="row">
+  {{>article_slider}}
+					</div>
+				</div>
+				<div class="item carousel-item">
+					<div class="row">
+	{{>article_slider_thumb}}
+					</div>
+				</div>
+			</div>
+			<!-- Carousel controls -->
+			<a class="carousel-control left carousel-control-prev" href="#myCarousel" data-slide="prev">
+				<i class="fa fa-angle-left"></i>
+			</a>
+			<a class="carousel-control right carousel-control-next" href="#myCarousel" data-slide="next">
+				<i class="fa fa-angle-right"></i>
+			</a>
+		</div>
+		</div>
+	</div>
+<div class="btn-vse-index">
+  <a href="/articles"><button type="button" name="button" class="btn btn-outline-secondary"> Перейти ко всем статьям </button></a></div>
+
+<div class="clear"></div>
+<div class="title_module"><span>Последние игры</span></div>
+<div class="row text-center">
+{{>games}}
+</div>
+<div class="btn-vse-index">
+  <a href="/games"><button type="button" name="button" class="btn btn-outline-secondary"> Посмотреть все игры </button></a></div>
+<br>
