@@ -1,0 +1,255 @@
+
+	@font-face {
+		font-family:Pangolin-Regular;
+	src: url("fonts/Pangolin-Regular.ttf");
+}
+
+
+	body {
+		background-image:url(images/Potted-plant-flowers-full-HD-modern-wallpaper-11120140721111.jpg);
+		  text-align: center;
+}
+
+
+
+hr {
+    border: 0;
+    height: 0; 
+    box-shadow: 0 0 5px 6px green;
+}
+
+.four {
+background-color: grey;
+opacity: 0.7;
+  padding: 50px 20px;
+  text-align: center;
+} 
+.four h2 {
+  font-family: 'Merriweather', serif;
+  position: relative;
+  color: white;
+  font-size: 50px;
+  font-weight: normal;
+  padding: 8px 20px 7px 20px;
+  border-top: 4px solid;
+  border-left: 4px solid;
+  display: inline-block;
+  margin: 0;
+  line-height: 1;
+}
+
+.four h3 {
+  font-family: 'Merriweather', serif;
+  position: relative;
+  color: white;
+  font-size: 50px;
+  font-weight: normal;
+  padding: 8px 20px 7px 20px;
+  border-top: 4px solid;
+  border-left: 4px solid;
+  display: inline-block;
+  margin: 0;
+  line-height: 1;
+}
+
+.four h4 {
+  font-family: 'Merriweather', serif;
+  position: relative;
+  color: white;
+  font-size: 50px;
+  font-weight: normal;
+  padding: 8px 20px 7px 20px;
+  border-top: 4px solid;
+  border-left: 4px solid;
+  display: inline-block;
+  margin: 0;
+  line-height: 1;
+}
+
+
+.four h2:before {
+  content: ""; 
+  position: absolute;
+  width: 28px;
+  height: 28px;
+  top: -28px;
+  left: -28px;
+  border: 4px solid white;
+  box-sizing: border-box;
+}
+
+.four h3:before {
+  content: ""; 
+  position: absolute;
+  width: 28px;
+  height: 28px;
+  top: -28px;
+  left: -28px;
+  border: 4px solid white;
+  box-sizing: border-box;
+}
+
+.four h4:before {
+  content: ""; 
+  position: absolute;
+  width: 28px;
+  height: 28px;
+  top: -28px;
+  left: -28px;
+  border: 4px solid white;
+  box-sizing: border-box;
+}
+
+
+
+/*--------intro------*/
+#intro {
+
+		background: url("images/3efa2b98802246d99f20a56c72e6df76.jpg");
+		background-size: 110%; 
+		background-attachment: local;
+		background-position: center;
+		background-repeat:no-repeat;
+		min-height: 100px;
+	}
+
+
+/*-----HEADER-------*/
+
+
+	h1 {
+	/* margin: 20px; */
+  font-family: "Paytone One";
+  color: #202020;
+  text-transform: uppercase;
+  letter-spacing: -2px;
+}
+h1 span {
+  display: block;
+  margin: 11px 0 17px 0;
+  font-size: 80px;
+  line-height: 80px;
+  color: #f1ebe5;
+  text-shadow: 0 13.36px 8.896px #c4b59d,0 -2px 1px #fff;
+  letter-spacing: -4px;
+}
+
+
+
+
+/*------ONE-------*/
+
+
+
+
+#one{
+  background-image: url(images/Potted-plant-flowers-full-HD-modern-wallpaper-11120140721111.jpg);
+  background-size: auto;
+  background-attachment: local;
+  background-position: center;
+  background-repeat:no-repeat;
+  min-height: 1000px;
+}
+
+
+.col-4 {max-width: 30%;
+	text-align: right;
+	
+}
+.col-8 { max-width: 100%;
+
+}
+
+
+/* Gallery */
+
+#Gallery{
+background: url("images/macro_spring_vanilla_foliage_green_80985_3840x2400.jpg");
+		background-size: 160%; 
+		background-attachment: local;
+		background-position: center;
+		background-repeat:no-repeat;
+		min-height: 900px;
+}
+
+
+.clear{
+	clear:both;
+}
+
+a, a:visited {
+	color:#00BBFF;
+	text-decoration:none;
+	outline:none;
+}
+
+a:hover{
+	text-decoration:underline;
+}
+
+#container{
+	width:890px;
+	margin:20px auto;
+}
+
+div.nomargin{
+	margin-right:0px;
+}
+
+.pic{
+	float:left;
+	margin:0 15px 15px 0;
+	border:5px solid white;
+	width:200px;
+	height:250px;
+}
+
+.pic a{
+	width:200px;
+	height:250px;
+	text-indent:-99999px;
+	display:block;
+}
+
+
+/*----CONTACT-----*/
+
+#contact{
+    background:url("images/Nature-Wallpaper.jpg");
+    background-size: 150%; 
+    background-attachment: local;
+    background-position: center;
+    background-repeat:no-repeat;
+    min-height: 1000px;
+    }
+
+ fieldset {
+ border: 1px solid white;
+ width: 100%;
+ background: white;
+ opacity: 0.5;
+ padding: 3px;
+
+ }
+ fieldset legend {
+   border: 1px solid #006400;
+   font-size: 24pt;
+   color: SaddleBrown;
+   background-color: #F0E68C;
+ padding: 6px;
+ font-weight: bold;
+ }
+
+ input[type="submit"]{
+   width:100px;
+   height:30px;
+   background:#556B2F;
+   color:#fff;
+   border:0 none;>
+
+
+/*-------footer----
+
+-*/
+
+
