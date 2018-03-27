@@ -21,7 +21,7 @@
           <a href="#portfolio">PORTFOLIO</a>
           <a href="#contact">CONTACT US</a>
           <a href="#location">LOCATION</a>
-          <a id="menu" href="#" class="icon">&#9776</a>
+          <a id="menu" href="#" class="icon" onclick="event.preventDefault(); clicker()">&#9776</a>
       </div>
     </nav> 
   </header>
@@ -89,11 +89,11 @@
             
             <h3 id="contact">CONTACT US</h3>
             <br>
-              <form class="form" action="send.php" method="get">
+              <form class="form" method="get">
                 <p><input type="text" name="name" class="feedback-input" placeholder="Name" id="name"></p>
                 <p><input type="email" name="email" class="feedback-input" placeholder="Email" id="email"></p>
                 <p><textarea name="text" id="comment" placeholder="Message" class="feedback-input"></textarea></p>
-                <input type="submit" value="Submit" class="buttonsubmit">
+                <input type="submit" value="Submit" class="buttonsubmit" id="btn-send">
                 <div class="ease"></div>
               </form>
 
