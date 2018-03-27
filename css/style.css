@@ -1,0 +1,53 @@
+.debug div{
+
+}
+  
+ .header{
+	 width:100%;
+ }
+ .navigation{
+	 width:100%;
+	 clear:left;
+ }
+ .mainBody{
+	 width:100%;
+	 clear:left;
+ }
+.columnLeft{
+	width: 25%;
+	float: left;
+}
+.columnMid{
+	width: 74%;
+	float: left;
+}
+.columnMid div img{
+	max-height: 100px;
+	margin: 10px;
+    max-width: 150px;
+	}
+.authorPhoto {
+	max-height: 200px;
+	margin: 10px;
+    max-width: 250px;
+	}
+	
+.columnMid div {
+	min-height: 120px;
+}
+
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: green;
+   color: white;
+   text-align: center;
+}
+.footer a, .footer a:visited {
+	color: white;
+}
+.modalContent{
+	display:none;
+}
