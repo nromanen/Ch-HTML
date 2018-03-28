@@ -54,7 +54,7 @@ app.post('/pasword', function(req, res) {
   var db = req.db;
 
   db.collection("login").find({}, {
-    _id: 0,
+    _id: 1,
     login: 1,
     pass: 1
   }, function(err, result) {
@@ -62,7 +62,7 @@ app.post('/pasword', function(req, res) {
 
     if (login == result[0].login && pass == result[0].pass) {
       db.collection("messages").find({}, {
-        _id: 0,
+        _id: 1,
         email: 1,
         message: 1
       }, function(err_messages, result_messages) {
@@ -71,11 +71,19 @@ app.post('/pasword', function(req, res) {
         res.send(result_messages);
       });
     } else {
-      res.send("wrong")
+      res.send("lashara")
     }
   });
 });
 
+app.delete('/deletemassage/:id', function(req, res) {
+    var db = req.db;
+    var collection = db.get('messages');
+    var messageToDelete = req.params.id;
+    collection.remove({ '_id' : messageToDelete }, function(err) {
+        res.send((err === null) ? { msg: '' } : { msg:'error: ' + err });
+    });
+});
 
 app.listen(3000, function() {
   console.log('Api app started');
